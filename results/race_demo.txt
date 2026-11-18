@@ -1,0 +1,7 @@
+RACY: files=40 word=error threads=8 total=1146771
+RACY: files=40 word=error threads=8 total=1189782
+RACY: files=40 word=error threads=8 total=1202451
+RACY: files=40 word=error threads=8 total=1196493
+RACY: files=40 word=error threads=8 total=1188085
+RACY: files=40 word=error threads=1 total=1669676
+files=40 word=error total=1669676 time=1.6542

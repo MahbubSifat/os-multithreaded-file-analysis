@@ -1,0 +1,10 @@
+version,threads,median_time,total
+seq,1,1.6372,2026675
+static,1,1.6044,2026675
+dynamic,1,1.5637,2026675
+static,2,1.6611,2026675
+dynamic,2,1.1624,2026675
+static,4,1.5859,2026675
+dynamic,4,0.6110,2026675
+static,8,1.5645,2026675
+dynamic,8,0.5443,2026675

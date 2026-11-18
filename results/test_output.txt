@@ -1,0 +1,77 @@
+=== NORMAL CASES ===
+PASS: basic (hand-counted) [sequential]
+PASS: basic (hand-counted) [thread-local t=1]
+PASS: basic (hand-counted) [mutex t=1]
+PASS: basic (hand-counted) [dynamic t=1]
+PASS: basic (hand-counted) [thread-local t=3]
+PASS: basic (hand-counted) [mutex t=3]
+PASS: basic (hand-counted) [dynamic t=3]
+PASS: basic (hand-counted) [thread-local t=8]
+PASS: basic (hand-counted) [mutex t=8]
+PASS: basic (hand-counted) [dynamic t=8]
+PASS: data/small (vs grep) [sequential]
+PASS: data/small (vs grep) [thread-local t=1]
+PASS: data/small (vs grep) [mutex t=1]
+PASS: data/small (vs grep) [dynamic t=1]
+PASS: data/small (vs grep) [thread-local t=3]
+PASS: data/small (vs grep) [mutex t=3]
+PASS: data/small (vs grep) [dynamic t=3]
+PASS: data/small (vs grep) [thread-local t=8]
+PASS: data/small (vs grep) [mutex t=8]
+PASS: data/small (vs grep) [dynamic t=8]
+PASS: data/uneven (vs grep) [sequential]
+PASS: data/uneven (vs grep) [thread-local t=1]
+PASS: data/uneven (vs grep) [mutex t=1]
+PASS: data/uneven (vs grep) [dynamic t=1]
+PASS: data/uneven (vs grep) [thread-local t=3]
+PASS: data/uneven (vs grep) [mutex t=3]
+PASS: data/uneven (vs grep) [dynamic t=3]
+PASS: data/uneven (vs grep) [thread-local t=8]
+PASS: data/uneven (vs grep) [mutex t=8]
+PASS: data/uneven (vs grep) [dynamic t=8]
+=== BOUNDARY CASES ===
+PASS: empty file [sequential]
+PASS: empty file [thread-local t=1]
+PASS: empty file [mutex t=1]
+PASS: empty file [dynamic t=1]
+PASS: empty file [thread-local t=3]
+PASS: empty file [mutex t=3]
+PASS: empty file [dynamic t=3]
+PASS: empty file [thread-local t=8]
+PASS: empty file [mutex t=8]
+PASS: empty file [dynamic t=8]
+PASS: one file, threads > files [sequential]
+PASS: one file, threads > files [thread-local t=1]
+PASS: one file, threads > files [mutex t=1]
+PASS: one file, threads > files [dynamic t=1]
+PASS: one file, threads > files [thread-local t=3]
+PASS: one file, threads > files [mutex t=3]
+PASS: one file, threads > files [dynamic t=3]
+PASS: one file, threads > files [thread-local t=8]
+PASS: one file, threads > files [mutex t=8]
+PASS: one file, threads > files [dynamic t=8]
+PASS: no trailing newline [sequential]
+PASS: no trailing newline [thread-local t=1]
+PASS: no trailing newline [mutex t=1]
+PASS: no trailing newline [dynamic t=1]
+PASS: no trailing newline [thread-local t=3]
+PASS: no trailing newline [mutex t=3]
+PASS: no trailing newline [dynamic t=3]
+PASS: no trailing newline [thread-local t=8]
+PASS: no trailing newline [mutex t=8]
+PASS: no trailing newline [dynamic t=8]
+=== FAILURE CASES ===
+PASS: no arguments
+PASS: missing directory
+PASS: directory with no .txt files
+PASS: zero threads
+PASS: threads not a number
+PASS: too many threads
+PASS: unreadable file: other files still counted
+PASS: unreadable file: error message printed
+=== REPEATABILITY ===
+PASS: 20 runs x 8 threads, every result correct
+=== RACE DEMO (information only, not a pass/fail test) ===
+correct=1669676   racy=1169751
+-------------------------------------
+PASSED: 69   FAILED: 0
